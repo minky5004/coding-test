@@ -6,38 +6,39 @@ class Solution {
 
         for (String s : keyinput) {
 
-            if (s.equals("up")) {
+            switch (s) {
+                case "up" -> {
 
-                if (now[1] > board[1] / 2 - 1) {
-                    continue;
-                } else {
-                    now[1]++;
+                    if (now[1] > board[1] / 2 - 1) {
+                        continue;
+                    } else {
+                        now[1]++;
+                    }
                 }
+                case "down" -> {
 
-            } else if (s.equals("down")) {
-
-                if (now[1] <= -(board[1] / 2)) {
-                    continue;
-                } else {
-                    now[1]--;
+                    if (now[1] <= -(board[1] / 2)) {
+                        continue;
+                    } else {
+                        now[1]--;
+                    }
                 }
+                case "left" -> {
 
-            } else if (s.equals("left")) {
-
-                if (now[0] <= -(board[0] / 2)) {
-                    continue;
-                } else {
-                    now[0]--;
+                    if (now[0] <= -(board[0] / 2)) {
+                        continue;
+                    } else {
+                        now[0]--;
+                    }
                 }
+                case "right" -> {
 
-            } else if (s.equals("right")) {
-
-                if (now[0] > board[0] / 2 - 1) {
-                    continue;
-                } else {
-                    now[0]++;
+                    if (now[0] > board[0] / 2 - 1) {
+                        continue;
+                    } else {
+                        now[0]++;
+                    }
                 }
-
             }
 
         }
