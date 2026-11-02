@@ -10,7 +10,6 @@ class Solution {
                 case "up" -> {
 
                     if (now[1] > board[1] / 2 - 1) {
-                        continue;
                     } else {
                         now[1]++;
                     }
@@ -18,7 +17,6 @@ class Solution {
                 case "down" -> {
 
                     if (now[1] <= -(board[1] / 2)) {
-                        continue;
                     } else {
                         now[1]--;
                     }
@@ -26,7 +24,6 @@ class Solution {
                 case "left" -> {
 
                     if (now[0] <= -(board[0] / 2)) {
-                        continue;
                     } else {
                         now[0]--;
                     }
@@ -34,7 +31,6 @@ class Solution {
                 case "right" -> {
 
                     if (now[0] > board[0] / 2 - 1) {
-                        continue;
                     } else {
                         now[0]++;
                     }
