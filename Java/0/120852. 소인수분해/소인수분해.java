@@ -20,6 +20,7 @@ class Solution {
         String [] temp2 = temp.split(" ");
 
         return Arrays.stream(temp2).distinct().mapToInt(Integer::parseInt).toArray();
+        
     }
 
 }
