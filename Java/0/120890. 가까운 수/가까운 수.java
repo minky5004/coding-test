@@ -8,7 +8,7 @@ class Solution {
 
         int [] distant = new int[array.length];
 
-        int temp = 1;
+        int temp;
 
         int minIdx = 0;
 
