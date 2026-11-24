@@ -1,26 +1,17 @@
 class Solution {
-
+    
     public String solution(String my_string, int num1, int num2) {
-
-        String [] temp = my_string.split("");
         
-        String temp1 = "";
+        char[] arr = my_string.toCharArray();
         
-        temp1 = temp [num1];
+        char tmp = arr[num1];
         
-        temp [num1] = temp [num2];
+        arr[num1] = arr[num2];
         
-        temp [num2] = temp1 ;
+        arr[num2] = tmp;
         
-        String ans = "";
+        return new String(arr);
         
-        for (int i = 0; i < temp.length; i++) {
-            
-            ans += temp[i];
-            
-        }
-
-        return ans;
-
     }
+    
 }
